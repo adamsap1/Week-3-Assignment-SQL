@@ -1,13 +1,17 @@
+ Question 1: Create the 'student' table
 CREATE TABLE student (
-    id INT PRIMARY KEY,
-    fullName VARCHAR(100),
-    age INT
+    id INT PRIMARY KEY,        -- Unique identifier for each student
+    fullName VARCHAR(100),     -- Student's full name (max 100 characters)
+    age INT                    -- Student's age as an integer
 );
-INSERT INTO student (id, fullName, age) VALUES 
-(1, 'John Doe', 18),
-(2, 'Jane Smith', 19),
-(3, 'Michael Johnson', 21);
 
+ Question 2: Insert at least 3 records into the 'student' table
+INSERT INTO student (id, fullName, age) VALUES 
+(1, 'John Doe', 18),   -- First student
+(2, 'Jane Smith', 19), -- Second student
+(3, 'Michael Johnson', 21); -- Third student
+
+Question 3: Update the age of the student with ID 2 to 20
 UPDATE student 
 SET age = 20 
 WHERE id = 2;
